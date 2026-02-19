@@ -1,0 +1,126 @@
+<!-- HTML--Списки используются для упорядочивания информации. Существуют три различных типа HTML-списков  -->
+
+<!-- 
+F12          — открыть/закрыть DevTools
+Ctrl+Shift+C — выбрать элемент (инспектор)
+Ctrl+Shift+R — принудительная перезагрузка (игнорирует кэш)
+F5           — обновить с кэшем
+Ctrl+L       — очистить адресную строку 
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>lists-ul-ol</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header_hero">
+            <h1>HTML-СПИСКИ</h1>
+        </header>
+
+
+        <main class="main-content"> <!-- ГЛАВНЫЙ КОНТЕЙНЕР ДЛЯ САЙТА -->
+            <div class="content-wrapper"> <!-- ← div для стилей (ширина, отступы) -->
+
+                <section>
+                    <h2>1.Неупорядоченный HTML-список</h2>
+                    <p>
+                        HTML-тег <code>&lt;ul&gt;</code> определяет неупорядоченный маркированный список. <br>
+                        Неупорядоченный
+                        список начинается с тега <code>&lt;ul&gt;</code>. <br> Каждый элемент списка начинается с тега
+                        <code>&lt;li&gt;</code>. <br>По умолчанию элементы списка обозначаются маркерами.
+                        <!-- Маленькими черными кружочками -->
+                        <!-- <code>&lt;ul&gt;</code> Таким оброзом просто экранировал тег <ul> -->
+                    </p>
+                    <!-- Поместим список в семантический тек <section></secrion> -->
+
+                    <!-- <h3> Неупорядоченный список</h3> -->
+                    <div class="demo">
+                        <ul>
+                            <li>Orange</li>
+                            <li>Apple</li>
+                            <li>Banana</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>2. Неупорядоченный список со свойством type</h2>
+                    <p>
+                        С помощью атрибута type в теге <code>&lt;ul&gt;</code> можно указать тип маркера, который будет
+                        использоваться для каждого <br>
+                        элемента неупорядоченного списка.
+                        <!-- Ппмер создания неупорядоченного списка с разными типами маркеров -->
+                    </p>
+
+                    <div class="demo">
+                        <h3>Пример с type</h3>
+                        <ul type="circle"> <!-- circle = пустой кружок  -->
+                            <li>Orange</li>
+                            <li>Apple</li>
+                            <li>Banana</li>
+                        </ul>
+                    </div>
+
+                    <!-- Таблица для примера как создать разные маркеры -->
+                    <div class="demo">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Тип</th>
+                                    <th>Вид маркера</th>
+                                    <th>Пример</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>disc</code></td>
+                                    <td>Черный кружок (по умолчанию)</td>
+                                    <td><code>type="disc"</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>circle</code></td>
+                                    <td>○ Пустой кружок</td>
+                                    <td><code>type="circle"</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>square</code></td>
+                                    <td>▪ Черный квадрат</td>
+                                    <td><code>type="square"</code></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+
+
+
+        </main>
+    </div>
+    <!--     <dl>
+        <dt>Heading One</dt>
+        <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porta nunc sem, non tincidunt
+            quam accumsan eget. Integer non cursus est. Cras eu ex odio. Suspendisse euismod laoreet
+            porttitor. Pellentesque ac sem nec dolor ullamcorper gravida.</dd>
+        <dt>Heading Two</dt>
+        <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porta nunc sem, non tincidunt
+            quam accumsan eget. Integer non cursus est. Cras eu ex odio. Suspendisse euismod laoreet
+            porttitor. Pellentesque ac sem nec dolor ullamcorper gravida.</dd>
+        <dt>Heading Three</dt>
+        <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porta nunc sem, non tincidunt
+            quam accumsan eget. Integer non cursus est. Cras eu ex odio. Suspendisse euismod laoreet
+            porttitor. Pellentesque ac sem nec dolor ullamcorper gravida.
+        <dd>
+    </dl> -->
+</body>
+
+</html>

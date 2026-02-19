@@ -1,0 +1,248 @@
+/* Основа страницы (фундамент дома) */
+body {
+    /* ❌ Убираем белые поля по краям браузера */
+    margin: 0;
+    /* ⬆️⬇️ Отступы сверху и снизу = 32px */
+    padding: 2rem 0;
+    /* 🌈 Красивый фон от серого к синему */
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    /* 🌈 Красивый фон от серого к синему */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+
+/* Заголовок H1 в шапке (радужный текст!) */
+.header_hero h1 {
+    /* ❌ Убираем отступы сверху/снизу */
+    margin: 0;
+    /* 📏 Огромный шрифт = 56px */
+    font-size: 3.5rem;
+    /* 🌈 Градиент синий→фиолетовый */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    /* 🎨 Фон только для текста (Webkit) */
+    -webkit-background-clip: text;
+    /* 🕳️ Прозрачный текст = виден градиент */
+    -webkit-text-fill-color: transparent;
+    /* 🎨 То же для других браузеров */
+    background-clip: text;
+}
+
+
+/* Главная рамка страницы */
+.container {
+    /* 📏 Максимум 1200px шириной */
+    max-width: 1200px;
+    /* 📐 Центр экрана (слева+справа равно) */
+    margin: 0 auto;
+    /* ⬅️➡️ Отступы слева+справа = 32px */
+    padding: 0 2rem;
+    /* 📏 Минимум на весь экран */
+    min-height: 100vh;
+}
+
+
+/* Белая карточка шапки */
+.header_hero {
+    /* 📐 Текст по центру */
+    text-align: center;
+    /* ⚪ Белый фон */
+    background: white;
+    /* 🧱 Отступы внутри = 48px */
+    padding: 3rem;
+    /* 📐 Отступ снизу */
+    margin-bottom: 1rem;
+    /* 🔄 Скруглённые углы */
+    border-radius: 20px;
+    /* 🌑 Мягкая тень */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    /* 📏 Тонкая серая рамка */
+    border: 1px solid #e1e5e9;
+}
+
+/* .main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+} */
+
+
+/*  Белая карточка контента */
+.content-wrapper {
+    /* ⚪ Белый фон */
+    background: white;
+    /* 🧱 Отступы 48px */
+    padding: 3rem;
+    /* 🔄 Скругления */
+    border-radius: 20px;
+    /* 🌑 Тень */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    /* 📏 Рамка */
+    border: 1px solid #e1e5e9;
+}
+
+
+
+/* Большие заголовки*/
+h2 {
+    /* 🖤 Тёмно-синий */
+    color: #2c3e50;
+    /* 📏 35px */
+    font-size: 2.2rem;
+    /* 📐 Отступ снизу */
+    margin-bottom: 1.5rem;
+    /* 🎯 База для ::after */
+    position: relative;
+    /* 🧱 Место для полоски */
+    padding-bottom: 0.5rem;
+}
+
+
+/* Волшебная полоска ПОД заголовком */
+h2::after {
+    /* 🎭 Создаёт НЕВИДИМЫЙ блок ПОСЛЕ h2 */
+    /* 📝 Пустой (только стили) */
+    content: '';
+    /* 📍 Фиксированная позиция */
+    position: absolute;
+    /* 📐 Внизу h2 */
+    bottom: 0;
+    /* 📐 Слева */
+    left: 0;
+    /* 📏 Ширина полоски */
+    width: 60px;
+    /* 📏 Высота */
+    height: 3px;
+    /* 🌈 Градиент */
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    /* 🔄 Скругление концов */
+    border-radius: 2px;
+
+    /*  Результат: Цветная полоска под каждым H2! ✨ */
+}
+
+h3 {
+    color: #34495e;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+/* Код */
+code {
+    background: #2d3748;
+    /* 🖤 Тёмный фон */
+    color: #a0aec0;
+    /* ⚪ Светлый текст */
+    padding: 0.2em 0.4em;
+    /* 🧱 Мини-отступы */
+    border-radius: 6px;
+    /* 🔄 Скругления */
+    font-family: 'Fira Code', monospace;
+    /* ⌨️ Шрифт кодера */
+    font-size: 0.9em;
+    /* 📏 Чуть меньше */
+}
+
+
+/* Демонстрации */
+.demo {
+    background: #f8fafc;
+    /* 🌫 Светло-серый */
+    border: 2px solid #e2e8f0;
+    /* 📏 Рамка */
+    border-radius: 12px;
+    /* 🔄 Скругления */
+    padding: 2rem;
+    /* 🧱 Отступы */
+    margin: 2rem 0;
+    /* 📐 Снаружи */
+    position: relative;
+    /* 🎯 Для лейбла */
+}
+
+
+.demo::before {
+    /* 🎭 НЕВИДИМЫЙ блок ПЕРЕД .demo */
+    content: 'Пример';
+    /* 📝 Текст */
+    position: absolute;
+    /* 📍 Фиксировано */
+    top: -12px;
+    /* 📐 Над рамкой */
+    left: 20px;
+    /* 📐 Смещение */
+    background: white;
+    /* ⚪ Фон */
+    padding: 0 12px;
+    /* 🧱 Отступы */
+    font-size: 0.85rem;
+    /* 📏 Маленький */
+    color: #64748b;
+    /* 🖤 Серый */
+    font-weight: 600;
+    /* ➕ Полужирный */
+
+    /* Результат: Желтая наклейка "Пример" на каждом блоке! 🏷️ */
+}
+
+
+/* Списки */
+ul {
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+/* Таблицы */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+th {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+td {
+    padding: 1rem;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+tr:hover {
+    background: #f8fafc;
+}
+
+/* Параграфы */
+p {
+    line-height: 1.7;
+    color: #4a5568;
+    margin-bottom: 1.5rem;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .content-wrapper {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+}
