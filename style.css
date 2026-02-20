@@ -161,7 +161,6 @@ code {
     /* 🎯 Для лейбла */
 }
 
-
 .demo::before {
     /* 🎭 НЕВИДИМЫЙ блок ПЕРЕД .demo */
     content: 'Пример';
@@ -188,17 +187,17 @@ code {
 
 
 /* Списки */
-ul {
+/* ul {
     padding-left: 0;
 }
 
 li {
     margin-bottom: 0.5rem;
     line-height: 1.6;
-}
+} */
 
 /* Таблицы */
-table {
+/* table {
     width: 100%;
     border-collapse: collapse;
     margin: 1.5rem 0;
@@ -226,17 +225,33 @@ td {
 
 tr:hover {
     background: #f8fafc;
-}
+} */
+
+
 
 /* Параграфы */
-p {
+/* p {
     line-height: 1.7;
     color: #4a5568;
     margin-bottom: 1.5rem;
-}
+} */
+
+/* ✅ Исправил селектор для советов */
+/* p.text_tips .tips {
+    display: inline-block;
+    text-align: left;
+    color: #ff0000;
+    font-style: italic;
+    background: yellow;
+    padding: 2px 5px;
+    border-radius: 4px;
+    /* ✅ Скругления */
+/* }  */
+
+
 
 /* Адаптивность */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .content-wrapper {
         padding: 1.5rem;
         margin: 1rem;
@@ -245,4 +260,4 @@ p {
     h2 {
         font-size: 1.8rem;
     }
-}
+} */
